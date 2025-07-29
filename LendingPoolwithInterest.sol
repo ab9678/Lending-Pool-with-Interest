@@ -380,7 +380,6 @@ contract LendingPoolWithInterest {
      */
     function _calculateBorrowInterest(address _user, uint256 _loanId, address _asset) internal view returns (uint256) {
         UserBorrow storage loan = userBorrows[_user][_loanId];
-        LendingPool storage pool = pools[_asset];
         
         uint256 timeElapsed = block.timestamp - loan.lastUpdateTime;
         uint256 currentRate = _calculateBorrowRate(_asset);
@@ -486,8 +485,8 @@ contract LendingPoolWithInterest {
         uint256 accruedInterest,
         uint256 lastUpdateTime
     ) {
-        UserDeposit storage deposit = userDeposits[_user][_asset];
-        return (deposit.amount, deposit.shareTokens, deposit.accruedInterest, deposit.lastUpdateTime);
+        UserDeposit storage userDeposit = userDeposits[_user][_asset];
+        return (userDeposit.amount, userDeposit.shareTokens, userDeposit.accruedInterest, userDeposit.lastUpdateTime);
     }
     
     function getUserLoan(address _user, uint256 _loanId) external view returns (
