@@ -116,3 +116,6 @@ We envision this protocol becoming a cornerstone of the decentralized financial 
 - **Global CDN Integration**: Fast, reliable access from anywhere in the world
 
 This roadmap represents our commitment to building not just a lending protocol, but a comprehensive financial infrastructure that can serve as the foundation for the next generation of decentralized finance applications. Each phase builds upon the previous one, creating an increasingly sophisticated and valuable platform for users worldwide.
+
+-Smart Token: 0x6586267C818772771ceFF47b7240Bc73C84Aa455
+<img width="1914" height="906" alt="Screenshot From 2025-07-29 13-08-40" src="https://github.com/user-attachments/assets/90959956-096a-489c-aefd-ba7ea5994b81" />
